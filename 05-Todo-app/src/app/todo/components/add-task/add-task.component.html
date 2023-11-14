@@ -1,0 +1,17 @@
+<h4>Agregar Tarea</h4>
+
+<form class="row" (ngSubmit)="emitTodo()">
+  <input
+    type="text"
+    [(ngModel)]="todo.name"
+    name="tarea"
+    class="form-control mb-2"
+    placeholder="Add a new task">
+
+  <button type="submit" class="btn btn-primary">
+    Add Task
+  </button>
+
+  <!-- <pre>{{ todo | json }}</pre> -->
+</form>
+

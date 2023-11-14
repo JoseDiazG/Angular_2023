@@ -1,0 +1,19 @@
+
+ <h1>Todo List</h1>
+ <hr>
+
+ <div class="row">
+  <div class="col">
+     <app-todo-add-task (onNewTodo)="onNewTodo($event)"></app-todo-add-task>
+  </div>
+
+  <div class="col">
+     <app-todo-list 
+      [todoList]="todos"
+      (onDelete)="onDeleteTodo($event)">
+     </app-todo-list>
+  </div>
+ </div>
+
+
+
