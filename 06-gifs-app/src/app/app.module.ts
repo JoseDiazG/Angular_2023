@@ -9,9 +9,10 @@ import { SharedModule } from './shared/shared.module';
 //componentes
 import { AppComponent } from './app.component';
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
