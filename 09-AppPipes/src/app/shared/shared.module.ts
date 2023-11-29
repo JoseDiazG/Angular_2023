@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 //importado desde la carpeta prime-ng
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 
+
 //importado desde la carpeta shared
 import { MenuComponent } from './components/menu/menu.component';
 
@@ -11,14 +12,15 @@ import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
   declarations: [
-    MenuComponent
+    MenuComponent,
   ],
   imports: [
     CommonModule,
-    PrimeNgModule
+    PrimeNgModule,
+
   ],
   exports:[
-    MenuComponent
+    MenuComponent,
   ]
 })
 export class SharedModule { }
